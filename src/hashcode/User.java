@@ -21,9 +21,14 @@ public class User {
     public String getEmail() { return email; }
     public void setEmail(String email) { this.email = email; }
 
+
     @Override
     public int hashCode() {
-        return (int) (id * name.hashCode() * email.hashCode());
+        int hash = 7;
+        hash = 31 * hash + (int) id;
+        hash = 31 * hash + (name == null ? 0 : name.hashCode());
+        hash = 31 * hash + (email == null ? 0 : email.hashCode());
+        return hash;
     }
 
     @Override
@@ -37,5 +42,4 @@ public class User {
                 && email.equals(user.email));
     }
 
-    // getters and setters here
 }
