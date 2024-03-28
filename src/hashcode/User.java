@@ -23,7 +23,7 @@ public class User {
 
     @Override
     public int hashCode() {
-        return 1;
+        return (int) (id * name.hashCode() * email.hashCode());
     }
 
     @Override
