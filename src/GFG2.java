@@ -13,6 +13,8 @@ public class GFG2 {
 
         System.out.println(value.hashCode());
 
+        System.out.println(value.isPresent());
+
 
 
     }

@@ -11,5 +11,8 @@ public class GFG {
 
         Optional<String> value = Optional.of(str[2]);
         System.out.println(value);
+
+        Optional<String> valueTeste = Optional.of("Pati");
+        System.out.println(valueTeste);
     }
 }
